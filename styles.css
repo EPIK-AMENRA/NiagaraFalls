@@ -1,0 +1,764 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/* 
+===============
+
+Color Scheme 
+
+===============
+
+#001A0E - Woodland Green
+#163E4C - WaterFall Green/Blue
+#42210B - TreeBark
+#C8B7A7 - Hiking Trail- Dark
+#F4F0EB - Hiking Trail- Light
+*/
+
+
+
+
+
+
+/* 
+===============
+
+Typography
+
+===============
+
+Nunito - Serif
+
+font-family:'Nunito Regular';
+font-family:"Nunito LightItalic";
+font-family:'Nunito SemiBold';
+
+
+
+Tinos - San Serif
+
+font-family:'Tinos Regular';
+font-family:'Tinos Italic';
+font-family:'Tinos Bold';
+*/
+
+
+
+/* 
+=================
+Global Styles
+=================
+*/
+
+
+
+
+
+
+body{
+	background-color: #F4F0EB;
+	color: #163E4C;
+		
+}
+
+
+.clearMe{
+	clear: both;
+}
+
+#logoMain{
+	
+}
+
+
+
+
+.col-lg-4{
+	padding:40px 40px 40px 40px;
+	display: grid;
+    place-items: center;
+	
+	
+}
+
+
+
+
+/* Navigation*/
+
+
+.navbar{
+	background-color: #C8B7A7;
+	
+	
+	
+}
+
+.navbar-collapse{
+	padding-left: 100px;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:#163E4C;
+	display: grid;
+    place-items: center;
+}
+
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #F4F0EB;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color:#F4F0EB;
+}
+
+
+
+
+
+/*
+
+=======================
+ Navigation Search bar
+=======================
+*/
+
+
+
+
+.wrapper {
+  width: 100%;
+  max-width: 31.25rem;
+	
+  
+}
+
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background: #F4F0EB;
+  color: #42210B;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* Header*/
+
+
+
+header {
+
+	
+}
+
+
+.display-1  {
+	float: left;
+	color: #F4F0EB ;
+	margin-top: 280px;
+    padding-left: 5px;
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%) repeat 0 0;
+	background-size: cover;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Home Page*/
+
+
+#homeHero {
+	height: 450px;
+	padding:40px 0 0 20px;
+	margin-top: 25px;
+    background-image: url("../images/AdobeStock_35443759.jpeg"); 
+	background-size: cover;
+	
+		
+}
+
+
+
+
+
+#homeHero header{
+
+	padding-left: 25px ;
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 1.0) 100%) repeat 0 0;
+	
+}
+
+
+
+#greeting{
+ 	color: #F4F0EB;
+	font-size: 18px;
+	
+	
+}
+
+
+#mainTitle{
+	color: #F4F0EB;
+	font-size: 100px;
+	
+}
+
+
+
+#supportingTitle{
+	color: #F4F0EB;
+	font-size: 18px;
+	
+}
+
+
+
+
+#Quote1 p{
+	font-size: 50px;
+	text-align: center;
+	margin:40px 0px 40px 0px;
+}
+
+
+
+#momAD{
+	 height: 220px;
+	 margin-top: 5px;
+	 margin-bottom: 5px;
+     background-size: cover;
+	 background-image: url("../images/maid_of_mist.jpg"); 
+}
+
+
+#bvAD{
+	 height: 220px;
+	 padding:40px 0 0 40px;
+	 margin-top: 5px;
+	 margin-bottom: 5px;
+	 background-size: cover;
+	 background-image: url("../images/bridal_veil_ad@2x.jpg"); 
+}
+
+#cowAD{
+	 height: 220px;
+	 padding:40px 0 0 40px;
+	 margin-top: 5px;
+	 margin-bottom: 5px;
+	 background-size: cover;
+	 background-image: url("../images/cave_of_winds_ad@2x.jpg"); 
+}
+
+
+
+
+
+/* 
+=================================
+ Home Page: Call to Action Buttons
+=================================
+*/
+
+
+
+
+#heroButton{
+	margin:10px 0px 40px 0px;
+	background-color: #163E4C;
+	border: 0;
+}
+
+
+#heroButton:hover{
+	background-color:#C8B7A7;
+	color: #163E4C;
+	border: 0;
+}
+
+
+#heroButton:active{
+	background-color:#C8B7A7;
+	color: #163E4C;
+	border: 0;
+	
+}
+
+
+
+
+
+
+
+#myButton1{
+	float: right;
+	margin:10px 0px 40px 0px;
+	background-color: #163E4C;
+	border: 0;
+}
+
+
+#myButton1:hover{
+	background-color:#C8B7A7;
+	color: #163E4C;
+	border: 0;
+}
+
+
+#myButton1:active{
+	background-color:#C8B7A7;
+	color: #163E4C;
+	border: 0;
+	
+}
+
+
+
+
+#myButton2{
+	float: right;
+	margin:10px 0px 40px 0px;
+	background-color: #163E4C;
+	border: 0;
+	
+}
+
+
+#myButton2:hover{
+	background-color:#C8B7A7;
+	color: #163E4C;
+	border: 0;
+}
+
+
+#myButton2:active{
+	background-color:#C8B7A7;
+	color: #163E4C;
+	border: 0;
+	
+}
+	
+	
+	
+
+#myButton3{
+	float: right;
+	margin:10px 0px 40px 0px;
+	background-color: #163E4C;
+	border: 0;
+}
+
+
+#myButton3:hover{
+	background-color:#C8B7A7;
+	color: #163E4C;
+	border: 0;
+}
+
+
+#myButton3:active{
+	background-color:#C8B7A7;
+	color: #163E4C;
+	border: 0;
+	
+}
+	
+
+
+
+
+
+
+
+
+
+/* About Page*/
+
+
+#aboutPage{
+	height: 450px;
+	padding:40px 0 0 40px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+    background-image: url("../images/AdobeStock_413383478.jpeg"); 
+	background-size: cover;
+
+	
+}
+
+
+
+.col-lg-8 p{
+	font-size: 18px;
+	margin: 40px 0px 40px 0px;
+	
+	
+}
+
+
+.col-lg-4 img{
+	
+	
+}
+
+
+
+
+
+
+/* Adventure Page*/
+
+
+
+#adventurePage{
+	height: 450px;
+	color: white;
+	padding:40px 0 0 40px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+    background-image: url("../images/AdobeStock_368094466.jpeg"); 
+	background-size: cover;
+	background-color: gray;
+	
+}
+
+
+#Quote2 p{
+	font-size: 50px;
+	text-align: center;
+	margin:40px 0px 40px 0px;
+}
+
+
+#backpackerType  h3{
+	display: grid;
+    place-items: center;
+}
+
+
+
+#hikersType h3{
+	display: grid;
+    place-items: center;
+}
+
+
+
+#woodhikerType h3{
+	display: grid;
+    place-items: center;
+}
+
+
+
+#backpackerType  p{
+	padding-bottom: 5px; 
+	
+}
+
+
+
+#hikersType p{
+	padding-bottom: 15px; 
+	
+}
+
+
+
+#woodhikerType p{
+	padding-bottom: 25px; 
+	
+}
+
+
+
+
+
+#backpacker img{
+	padding-top: 20px;
+	
+	
+}
+
+
+#hikers img{
+	padding-top: 20px;
+	
+}
+
+
+
+#woodhiker img{
+	padding-top: 20px;
+	
+	
+}
+
+
+
+
+
+
+/* Reservation Page*/
+
+
+
+
+#reservationsPage{
+	height: 450px;
+	color: white;
+	padding:40px 0 0 40px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+    background-image: url("../images/AdobeStock_394624302.jpeg"); 
+	background-size: cover;
+	background-color: gray;
+	
+}
+
+
+
+
+/* Gallery Page*/
+
+
+
+
+
+
+
+#galleryPage{
+	height: 450px;
+	color: white;
+	padding:40px 0 0 40px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+    background-image: url("../images/kalen-emsley-54ETr06aYSk-unsplash.jpg"); 
+	background-size: cover;
+	background-color: gray;
+	
+}
+
+#carousel1{
+	height: 200px;
+	background-color: gray;
+	margin-bottom: 50px;
+	
+}
+
+
+
+#carousel2{
+	height: 200px;
+	background-color: gray;
+	margin-bottom: 50px;
+	
+}
+
+
+
+
+#carousel3{
+	height: 200px;
+	background-color: gray;
+	margin-bottom: 50px;
+	
+}
+
+
+
+
+
+
+/* Contact Page*/
+
+
+
+
+
+#contactPage{
+	height: 440px;
+	color: white;
+	padding:40px 0 0 40px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+    background-image: url("../images/help desk.jpeg"); 
+	background-size: cover;
+	background-color: gray;
+	
+}
+
+
+
+
+
+#contactNumber{
+	display: grid;
+    place-items: center;
+	
+	
+	
+}
+
+
+#phoneIcon{
+	padding-bottom: 25px;
+	
+}
+
+
+#numericContact{
+	color: #163E4C;
+	
+}
+
+
+#contactForm{
+	margin-top: 50px;
+	
+}
+
+
+.btn-primary{
+	margin:10px 0px 00px 0px;
+	background-color: #163E4C;
+	border: 0;
+	
+}
+
+
+
+
+/* Footer */
+
+
+
+
+
+
+footer {
+	margin-top: 30px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: #C8B7A7;
+	display: grid;
+    place-items: center;
+		
+}
+
+
+#footerLeft{
+	
+}
+
+
+
+#footerMiddle{
+	text-align: center;
+	margin-top: 50px;
+}
+
+
+
+#footerRight{
+	
+}
+
+
+footer ul{
+	margin-left: -40px
+}
+	
+footer ul li{
+	display:inline;
+	
+}
+
+footer ul li a{
+	color:#163E4C;
+	text-decoration: none;
+}
+
+
+footer ul li a:hover{
+	color:#F4F0EB;
+	text-decoration: none;
+}
+
+
+#logoFooter {
+	padding: 50px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
