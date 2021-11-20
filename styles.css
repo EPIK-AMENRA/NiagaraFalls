@@ -29,7 +29,7 @@ Typography
 
 ===============
 
-Nunito - Serif
+Nunito - San Serif
 
 font-family:'Nunito Regular';
 font-family:"Nunito LightItalic";
@@ -37,7 +37,7 @@ font-family:'Nunito SemiBold';
 
 
 
-Tinos - San Serif
+Tinos - Serif
 
 font-family:'Tinos Regular';
 font-family:'Tinos Italic';
@@ -57,9 +57,40 @@ Global Styles
 
 
 
+@include card.core-styles;
+@include form-field.core-styles;
+@use "@material/radio/styles";
+@use "@material/form-field";
+@use "@material/card";
+@import "@material/floating-label/mdc-floating-label";
+@import "@material/elevation/mdc-elevation";
+@import "@material/textfield/mdc-text-field";
+@import "@material/fab/mdc-fab";
+@import "@material/button/mdc-button";
+
+
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$display-font-weight: 300;
+$display-line-height: $headings-line-height;
+
+
+
+
+
 body{
+	
 	background-color: #F4F0EB;
 	color: #163E4C;
+	
 		
 }
 
@@ -76,12 +107,109 @@ body{
 
 
 .col-lg-4{
-	padding:40px 40px 40px 40px;
+	padding:40px 0px 40px 0px;
 	display: grid;
     place-items: center;
 	
 	
 }
+
+
+
+
+
+.my-card {
+  height: 350px;
+  width: 350px;
+	
+}
+
+
+.mb-3{
+width: 200px;
+}
+
+.mdc-card {
+	margin-top: 100px;
+	box-shadow: 10px 10px 5px  #42210B;
+	padding: 20px 0px 0px 20px;
+	background-color: #C8B7A7;
+	background-image: linear-gradient(to bottom right, #C8B7A7, #fff);
+	
+}
+.mdc-card p{
+	padding: 50px 0px 0px 0px;
+	margin: 10px 0px 10px 0px;
+	
+}
+.mdc-button--raised{
+	width: 100px;
+	color: #4285F4;
+	margin: 20px 0px 20px 0px;
+}
+
+.form-floating{
+	width: 400px;
+}
+
+
+
+#contactSubmit{
+	background-color:#163E4C;
+	color: #F4F0EB;
+	border: 0;
+}
+	
+	
+	
+#contactSubmit:hover{
+	background-color:#F4F0EB;
+	color: #163E4C;
+	border: 0;
+}
+
+
+#contactSubmit:active{
+	background-color:#F4F0EB;
+	color: #163E4C;
+	border: 0;
+	
+}
+
+
+
+#reserveForm h4{
+	color:#42210B;
+	padding: 20px 0px 20px 0px;
+}
+
+#reserveForm label{
+	color:#42210B;
+}
+
+
+
+
+.form-control{
+	background-color:#F4F0EB;
+	color:#42210B;
+	border: 0;
+
+	
+      
+    
+}
+
+.form-label{
+	color:#42210B;
+	
+	
+}
+
+.mdc-form-field{
+	padding-bottom: 20px;
+}
+
 
 
 
@@ -117,7 +245,11 @@ body{
 }
 
 
-
+#navbarSupportedContent{
+    margin: 0px 50px 0px 0px;
+    justify-content: center;
+	
+}
 
 
 /*
@@ -216,10 +348,10 @@ header {
 
 
 #homeHero {
-	height: 450px;
+	
 	padding:40px 0 0 20px;
 	margin-top: 25px;
-    background-image: url("../images/AdobeStock_35443759.jpeg"); 
+    background-image: url("https://drive.google.com/uc?export=download&id=1o31qh2P8e9gUFwVo8wI8QnIzGLuye5xi"); 
 	background-size: cover;
 	
 		
@@ -276,7 +408,7 @@ header {
 	 margin-top: 5px;
 	 margin-bottom: 5px;
      background-size: cover;
-	 background-image: url("../images/maid_of_mist.jpg"); 
+	 background-image: url("https://drive.google.com/uc?export=download&id=1d3vZQsbP9H9ovW2YY8OOm1ArXH8yiU9S"); 
 }
 
 
@@ -286,7 +418,7 @@ header {
 	 margin-top: 5px;
 	 margin-bottom: 5px;
 	 background-size: cover;
-	 background-image: url("../images/bridal_veil_ad@2x.jpg"); 
+	 background-image: url("https://drive.google.com/uc?export=download&id=1ET6SQnMFkdM08y-RC5m9_I_Ox_wzpJC6"); 
 }
 
 #cowAD{
@@ -295,7 +427,7 @@ header {
 	 margin-top: 5px;
 	 margin-bottom: 5px;
 	 background-size: cover;
-	 background-image: url("../images/cave_of_winds_ad@2x.jpg"); 
+	 background-image: url("https://drive.google.com/uc?export=download&id=1rJFLCN3dHl_PIFaYb7guwXXUPBpjPobm"); 
 }
 
 
@@ -424,11 +556,10 @@ header {
 
 
 #aboutPage{
-	height: 450px;
 	padding:40px 0 0 40px;
 	margin-top: 25px;
 	margin-bottom: 25px;
-    background-image: url("../images/AdobeStock_413383478.jpeg"); 
+    background-image: url("https://drive.google.com/uc?export=download&id=1BwruhJ9DV4_bgSqJ8hStZRGn9kSehaBC"); 
 	background-size: cover;
 
 	
@@ -444,11 +575,22 @@ header {
 }
 
 
-.col-lg-4 img{
-	
+
+#touristGirl{
+	display: grid;
+    place-items: center;
+	padding: 0px 50px 0px 50px;
 	
 }
 
+
+
+
+#touristGuy{
+	
+	padding: 0px 50px 0px 50px;
+	
+}
 
 
 
@@ -459,12 +601,11 @@ header {
 
 
 #adventurePage{
-	height: 450px;
 	color: white;
 	padding:40px 0 0 40px;
 	margin-top: 25px;
 	margin-bottom: 25px;
-    background-image: url("../images/AdobeStock_368094466.jpeg"); 
+    background-image: url("https://drive.google.com/uc?export=download&id=1Hue0yoj-6XR2UM5TzWBkCCE9duA1tGCd"); 
 	background-size: cover;
 	background-color: gray;
 	
@@ -553,17 +694,54 @@ header {
 
 
 #reservationsPage{
-	height: 450px;
 	color: white;
 	padding:40px 0 0 40px;
 	margin-top: 25px;
 	margin-bottom: 25px;
-    background-image: url("../images/AdobeStock_394624302.jpeg"); 
+    background-image: url("https://drive.google.com/uc?export=download&id=1MNZLLZpxcfwaBl0Lfv7tH2G7oBxeL4ub"); 
 	background-size: cover;
 	background-color: gray;
 	
 }
+	
+	
+	
+#reservationsIntro{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 18px;
+	color:#163E4C;
+}
 
+
+
+#reservationsIntro p{
+	padding-top: 50px;
+}
+
+
+#resBodyRow{
+	padding: 50px 0px 100px 0px;
+	
+	
+}
+
+
+#reservationsBody p{
+	color:#163E4C;
+}
+
+#reservecard{
+	color:#163E4C;
+	text-align: center;
+	font-family:"Nunito LightItalic";
+}
+
+
+#reserveForm{
+	display: grid;
+    place-items: center;
+}
 
 
 
@@ -576,44 +754,125 @@ header {
 
 
 #galleryPage{
-	height: 450px;
 	color: white;
 	padding:40px 0 0 40px;
 	margin-top: 25px;
 	margin-bottom: 25px;
-    background-image: url("../images/kalen-emsley-54ETr06aYSk-unsplash.jpg"); 
+    background-image: url("https://drive.google.com/uc?export=download&id=1nR0TxcBBpvBC_c9f4tzv9NjEoHDKjbgd"); 
 	background-size: cover;
 	background-color: gray;
 	
 }
 
-#carousel1{
-	height: 200px;
-	background-color: gray;
-	margin-bottom: 50px;
+.g1{
+	margin: 20px 0px 20px 0px;
+}
+
+.g1 h3{
+	display:flex;
+	justify-content: center;
+	color:#163E4C;
+	
 	
 }
 
 
 
-#carousel2{
-	height: 200px;
-	background-color: gray;
-	margin-bottom: 50px;
+.g2{
+	margin: 20px 0px 20px 0px;
+}
+
+.g2 h3{
+	display:flex;
+	justify-content: center;
+	color:#163E4C;
+}
+
+
+.g3{
+	margin: 20px 0px 20px 0px;
+}
+
+
+
+.g3 h3{
+	display:flex;
+	justify-content: center;
+	color:#163E4C;
+}
+
+
+#galBodyRow{
+	padding: 50px 0px 100px 0px;
+}
+
+
+	
+#galleryIntro{
+	margin-top: 20px;
+	font-size: 18px;
+	text-align: center;
+	color:#163E4C;
+}
+
+
+/*
+=====================
+ Image Lightbox
+===================== */
+
+#galBox1 {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+  
+ 
+	
+}
+
+#galBox1 img{
+    margin: 5px;
+	background-color: #C8B7A7;
+	border-color: #F4F0EB;
 	
 }
 
 
 
-
-#carousel3{
-	height: 200px;
-	background-color: gray;
-	margin-bottom: 50px;
+#galBox2 {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  
+ 
 	
 }
 
+#galBox2 img{
+	margin: 5px;
+	background-color: #C8B7A7;
+	border-color: #F4F0EB;
+    
+}
 
+
+
+#galBox3 {
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  
+ 
+	
+}
+
+#galBox3 img{
+	margin: 5px;
+	background-color: #C8B7A7;
+	border-color: #F4F0EB;
+	
+}
 
 
 
@@ -625,54 +884,52 @@ header {
 
 
 #contactPage{
-	height: 440px;
 	color: white;
 	padding:40px 0 0 40px;
 	margin-top: 25px;
-	margin-bottom: 25px;
-    background-image: url("../images/help desk.jpeg"); 
+    background-image: url("https://drive.google.com/uc?export=download&id=1qs27XBNINPWm-EaQTKLam6m2qOpXvhHS"); 
 	background-size: cover;
 	background-color: gray;
 	
+	
+}
+
+
+
+
+
+
+#reserveCard{
+	background-image: url("https://drive.google.com/uc?export=download&id=1wVXS2luPyJhOfvN9VExbcWrZAqbj1Ld4") ; 
+	background-size: cover;
+	color:#001A0E;
+	font-family:'Nunito SemiBold';
+	text-align: left;
+	
+	
+}
+
+#contactSubheading{
+	padding-bottom: 20px;
 }
 
 
 
 
+/*
+=====================
+   MAP
+=====================
+*/
 
-#contactNumber{
-	display: grid;
-    place-items: center;
+
+
+ 
+
 	
 	
-	
-}
 
 
-#phoneIcon{
-	padding-bottom: 25px;
-	
-}
-
-
-#numericContact{
-	color: #163E4C;
-	
-}
-
-
-#contactForm{
-	margin-top: 50px;
-	
-}
-
-
-.btn-primary{
-	margin:10px 0px 00px 0px;
-	background-color: #163E4C;
-	border: 0;
-	
-}
 
 
 
